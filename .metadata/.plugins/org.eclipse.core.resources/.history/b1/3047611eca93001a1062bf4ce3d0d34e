@@ -1,0 +1,16 @@
+package Classes;
+
+public class TAKIM {
+	private String takimAdi;
+	private String sehir;
+	public TAKIM(String takimAdi, String sehir) {
+		this.setTakimAdi(takimAdi);
+		this.sehir = sehir;
+	}
+	public String getTakimAdi() {
+		return takimAdi;
+	}
+	public void setTakimAdi(String takimAdi) {
+		this.takimAdi = takimAdi;
+	}
+}

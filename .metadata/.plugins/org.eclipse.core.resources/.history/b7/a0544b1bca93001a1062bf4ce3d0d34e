@@ -1,0 +1,10 @@
+package Classes;
+
+public class TAKIM {
+	private String takimAdi;
+	private String sehir;
+	public TAKIM(String takimAdi, String sehir) {
+		this.takimAdi = takimAdi;
+		this.sehir = sehir;
+	}
+}

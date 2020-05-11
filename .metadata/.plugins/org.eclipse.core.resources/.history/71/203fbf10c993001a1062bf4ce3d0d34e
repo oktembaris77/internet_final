@@ -1,0 +1,5 @@
+package DAO;
+
+public class TakimKayitIslemi {
+	String connURL = "jdbc:sqlserver://localhost:1433:databaseName=VERITABANI ADI;integratedSecurity=true";
+}

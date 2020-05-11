@@ -1,0 +1,16 @@
+package DAO;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+import Classes.TAKIM;
+
+public class TakimKayitIslemi {
+	String connURL = "jdbc:sqlserver://localhost:1433:databaseName=DB_TURNUVA;integratedSecurity=true";
+	public int TakimKayit(TAKIM takim) {
+		String insertQuery = "INSERT INTO takimlar VALUES(?,?)";
+		try {
+			Connection conn = DriverManager.getConnection(connURL);
+		}
+	}
+}
