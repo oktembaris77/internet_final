@@ -5,3 +5,16 @@
 1589230376970	Delete element
 1589230684001	Encapsulate field 'takimAdi'
 1589230689166	Encapsulate field 'sehir'
+1589238740632	Move 'index.jsp' to 'WEB-INF'
+1589238766027	Move 'index.jsp' to 'WebContent'
+1589243591418	Move 'sqljdbc_8.2' to 'lib'
+1589243599162	Delete element
+1589245027255	Delete element
+1589279183034	Delete element
+1589280428247	Delete elements
+1589306419679	Encapsulate field 'id'
+1589309314220	Encapsulate field 'takim1id'
+1589309318067	Encapsulate field 'takim2id'
+1589309407642	Delete element
+1589315142377	Encapsulate field 'takim1Adi'
+1589315147429	Encapsulate field 'takim2Adi'

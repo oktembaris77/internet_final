@@ -21,6 +21,7 @@ public class TakimKayitServlet extends HttpServlet {
      * Default constructor. 
      */
     public TakimKayitServlet() {
+    	
         // TODO Auto-generated constructor stub
     }
 
@@ -46,13 +47,9 @@ public class TakimKayitServlet extends HttpServlet {
 		}else {
 			System.out.println("Insert işleminde hata oluştu.");
 		}
+
 		
 		
-		
-		//request.getParameter("takimadi");
-		//request.getParameter("sehir");
-		
-		//doGet(request, response);
 	}
 
 }

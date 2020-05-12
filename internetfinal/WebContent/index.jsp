@@ -9,8 +9,12 @@
 <style>
 *{
 	margin:0;padding:0;
+	font-family:"verdana";
 }
-
+body{
+background-image:url("saha.jpg");
+background-size:cover;
+}
 #ustmenu{
 width:100%;
 height:70px;
@@ -46,10 +50,11 @@ box-shadow: 1px 2px 1px 1px gray;
 }
 
 #icerik{
+padding:10px 10px 10px 30%;
 width:100%;
-height:1000px;
+height:100%;
 background-color:#eee;
-padding:10px;
+background-color: rgba(238, 238, 238, 0.8);
 box-sizing:border-box;
 }
 
