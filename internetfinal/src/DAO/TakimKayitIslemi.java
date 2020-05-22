@@ -16,8 +16,6 @@ public class TakimKayitIslemi {
 		
 	}
 	public boolean TakimKayit(TAKIM takim) {
-	
-		
 		String insertQuery = "INSERT INTO takimlar (takim_adi,sehir) VALUES(?,?)";
 		try {
 			
@@ -47,46 +45,36 @@ public class TakimKayitIslemi {
 			return false;
 		}
 		
-		
-		
-		
-		
-		
 	}
 	
-public void TurnuvaFikstur(ArrayList<TAKIM> takimlar) {
-	ArrayList<TAKIM> takimlarliste = new ArrayList<TAKIM>();
-	takimlarliste = takimlar;
-	Random rand = new Random(); 
-	String insertQuery = "INSERT INTO turnuva_fikstur (takim1id,takim2id) VALUES(?,?)";
-	
-	for(int i= 0; i<takimlarliste.size();i++) {
-		int rnd = 0;
-		rnd = rand.nextInt(takimlarliste.size());
-		TAKIM takim1=takimlarliste.get(rnd);
-		takimlarliste.remove(rnd);
-		
-		rnd = rand.nextInt(takimlarliste.size());
-		TAKIM takim2=takimlarliste.get(rnd);
-		takimlarliste.remove(rnd);
-		
-		System.out.println(takim1.getTakimAdi() + " vs " + takim2.getTakimAdi());
-		
-		
-		
-		try {
-			Connection conn = DriverManager.getConnection(connURL);
-			PreparedStatement pst = conn.prepareStatement(insertQuery);
-			pst.setInt(1, takim1.getId());
-			pst.setInt(2, takim2.getId());
+	public void TurnuvaFikstur(ArrayList<TAKIM> takimlar) {
+		ArrayList<TAKIM> takimlarliste = new ArrayList<TAKIM>();
+		takimlarliste = takimlar;
+		Random rand = new Random(); 
+		String insertQuery = "INSERT INTO turnuva_fikstur (takim1id,takim2id) VALUES(?,?)";
+		int takimListSize = takimlarliste.size();
+		for(int i= 0; i<takimListSize/2;i++) {
+			int rnd = 0;
+			rnd = rand.nextInt(takimlarliste.size());
+			TAKIM takim1=takimlarliste.get(rnd);
+			takimlarliste.remove(rnd);
 			
-			pst.execute();
-		}catch(SQLException ex) {
-			ex.printStackTrace();
+			rnd = rand.nextInt(takimlarliste.size());
+			TAKIM takim2=takimlarliste.get(rnd);
+			takimlarliste.remove(rnd);
+			
+			System.out.println(takim1.getTakimAdi() + " vs " + takim2.getTakimAdi());
+			
+			try {
+				Connection conn = DriverManager.getConnection(connURL);
+				PreparedStatement pst = conn.prepareStatement(insertQuery);
+				pst.setInt(1, takim1.getId());
+				pst.setInt(2, takim2.getId());
+				
+				pst.execute();
+			}catch(SQLException ex) {
+				ex.printStackTrace();
+			}
 		}
 	}
-	
-}
-
-	
 }

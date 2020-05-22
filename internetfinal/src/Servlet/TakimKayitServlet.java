@@ -49,10 +49,9 @@ public class TakimKayitServlet extends HttpServlet {
 		if(result) {
 			System.out.println("Başarılı: " + takim.getTakimAdi()+" - "+takim.getSehir());
 		}else {
-			
-
-		     //denemelerr
-			System.out.println("Insert işlemi başarısız oldu. (Takım listesi full olduğu için de olabilir)");
+		
+		    //denmelerr
+			System.out.println("Insert işlemi başarısız oldu. (Takım listesi full olduğu için de olabilir @@@@@@@@@)");//ÖNEMLİ - kayıt olan takımlar fullse tekrar insert olmaz !!!!!
 		}
 		doGet(request, response);
 		

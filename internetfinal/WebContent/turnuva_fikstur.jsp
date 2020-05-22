@@ -88,6 +88,13 @@ background-color:#ccc;
 tr:hover{
 background-color:gray;
 }
+#icerikbaslik{
+width:100%;
+height: 60px;
+text-align : center;
+line-height : 60px;
+background-color:#ccc;
+}
 
 </style>
 
@@ -134,6 +141,7 @@ background-color:gray;
 	</div>
 	
 	<div id="icerik">
+	<div id="icerikbaslik"><b>Turnuva Fikstür</b></div>
 		<% 
 			if(takimlararray.size()<16){
 				out.println("<p>Turnuva katılımları henüz tamamlanmadı. Katılım:"+takimlararray.size()+"/16</p>");
