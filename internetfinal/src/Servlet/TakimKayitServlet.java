@@ -1,11 +1,14 @@
 package Servlet;
 
+import java.awt.Window;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
 
 import Classes.TAKIM;
 import DAO.TakimKayitIslemi;
@@ -30,7 +33,8 @@ public class TakimKayitServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		
 	}
 
 	/**
@@ -45,9 +49,12 @@ public class TakimKayitServlet extends HttpServlet {
 		if(result) {
 			System.out.println("Başarılı: " + takim.getTakimAdi()+" - "+takim.getSehir());
 		}else {
-			System.out.println("Insert işleminde hata oluştu.");
-		}
+			
 
+		     //denemelerr
+			System.out.println("Insert işlemi başarısız oldu. (Takım listesi full olduğu için de olabilir)");
+		}
+		doGet(request, response);
 		
 		
 	}

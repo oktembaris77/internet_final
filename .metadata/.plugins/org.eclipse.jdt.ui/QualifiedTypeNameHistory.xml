@@ -15,4 +15,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="DAO.TakimIsminiBul"/>
     <fullyQualifiedTypeName name="Classes.TAKIM_ADLARI"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="javax.swing.JDialog"/>
+    <fullyQualifiedTypeName name="java.awt.Window"/>
 </qualifiedTypeNameHistroy>

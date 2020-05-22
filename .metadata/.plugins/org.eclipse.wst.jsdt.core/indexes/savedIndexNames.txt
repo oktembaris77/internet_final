@@ -1,8 +1,6 @@
-INDEX VERSION 1.4+C:\Users\hp\Desktop\Ýnternet Program Final\internet_final\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-1886217095.index
-3982843146.index
-1047517589.index
-3171318934.index
+INDEX VERSION 1.4+C:\Users\casper\Documents\GitHub\internet_final\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+770190169.index
+1037325499.index
 2508946438.index
-675435123.index
-2594688460.index
+737192786.index
+195852580.index

@@ -85,6 +85,7 @@ background-color:#ccc;
 	ArrayList<TAKIM> takimlararray = new ArrayList<TAKIM>();
 	takimlararray = takimlar.Takimlar();
 	
+	/*
 	takimlararray.add(new TAKIM("Takım1","Şehir1"));
 	takimlararray.add(new TAKIM("Takım2","Şehir2"));
 	takimlararray.add(new TAKIM("Takım3","Şehir3"));
@@ -101,6 +102,7 @@ background-color:#ccc;
 	takimlararray.add(new TAKIM("Takım14","Şehir14"));
 	takimlararray.add(new TAKIM("Takım15","Şehir15"));
 	takimlararray.add(new TAKIM("Takım16","Şehir16"));
+	*/
 
 %>
 
@@ -133,9 +135,9 @@ background-color:#ccc;
 					out.println
 					("<tr><td>"+takimlararray.get(i).getTakimAdi()+"</td><td>"+takimlararray.get(i).getSehir()+"</td></tr>");
 				}
-				
+				/*
 				TakimKayitIslemi t = new TakimKayitIslemi();
-				t.TurnuvaFikstur(takimlararray);
+				t.TurnuvaFikstur(takimlararray);*/
 				%>
 			</table>
 	</div>

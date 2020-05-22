@@ -96,6 +96,7 @@ background-color:gray;
 	ArrayList<TAKIM> takimlararray = new ArrayList<TAKIM>();
 	takimlararray = takimlar.Takimlar();
 	
+	/*
 	takimlararray.add(new TAKIM("Takım1","Şehir1"));
 	takimlararray.add(new TAKIM("Takım2","Şehir2"));
 	takimlararray.add(new TAKIM("Takım3","Şehir3"));
@@ -111,8 +112,8 @@ background-color:gray;
 	takimlararray.add(new TAKIM("Takım13","Şehir13"));
 	takimlararray.add(new TAKIM("Takım14","Şehir14"));
 	takimlararray.add(new TAKIM("Takım15","Şehir15"));
-	takimlararray.add(new TAKIM("Takım16","Şehir16"));
-
+	takimlararray.add(new TAKIM("Takım16","Şehir16"));	
+*/
 %>
 
 </head>
@@ -134,12 +135,13 @@ background-color:gray;
 	
 	<div id="icerik">
 		<% 
-			if(takimlararray.size()!=16){
+			if(takimlararray.size()<16){
 				out.println("<p>Turnuva katılımları henüz tamamlanmadı. Katılım:"+takimlararray.size()+"/16</p>");
 			}else{
 				ArrayList<TAKIM_ADLARI> turnuva = new ArrayList<TAKIM_ADLARI>();
 				turnuva = takimlar.TurnuvaFikstur();
 				
+				/*
 				turnuva.add(new TAKIM_ADLARI("Takım1","Şehir9"));
 				turnuva.add(new TAKIM_ADLARI("Takım2","Şehir10"));
 				turnuva.add(new TAKIM_ADLARI("Takım3","Şehir11"));
@@ -148,7 +150,7 @@ background-color:gray;
 				turnuva.add(new TAKIM_ADLARI("Takım6","Şehir14"));
 				turnuva.add(new TAKIM_ADLARI("Takım7","Şehir15"));
 				turnuva.add(new TAKIM_ADLARI("Takım8","Şehir16"));
-				
+				*/
 				
 				out.print("<table>");
 				for(int i=0; i<turnuva.size();i++){
