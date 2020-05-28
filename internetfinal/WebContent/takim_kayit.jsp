@@ -97,6 +97,14 @@ width:100px;
 	
 	<div id="icerik">
 	<br>
+	<p>
+		<%
+		if(request.getParameter("d").equals("kayit")){
+			out.println("<p><b><font color='green'>Kayıt işlemi gerçekleşti.</font></b></p><br><br>");
+		}
+		
+		%>
+	</p>
 	<p class="baslik">Takım Kayıt Formu</p><br><br>
 		<form name="takimkayit" action="TakimKayitServlet" method="post">
 			<table>

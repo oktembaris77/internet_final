@@ -2,6 +2,8 @@ package Servlet;
 
 import java.awt.Window;
 import java.io.IOException;
+import java.io.Writer;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -33,8 +35,9 @@ public class TakimKayitServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
-		
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		//response.getWriter().append("Takım kayıt işlemi gerçekleşti.");
+		response.sendRedirect(request.getContextPath() + "/takim_kayit.jsp?d=kayit");
 	}
 
 	/**
@@ -50,8 +53,7 @@ public class TakimKayitServlet extends HttpServlet {
 			System.out.println("Başarılı: " + takim.getTakimAdi()+" - "+takim.getSehir());
 		}else {
 		
-		    //denmelerr
-			System.out.println("Insert işlemi başarısız oldu. (Takım listesi full olduğu için de olabilir @@@@@@@@@)");//ÖNEMLİ - kayıt olan takımlar fullse tekrar insert olmaz !!!!!
+			System.out.println("Insert işlemi başarısız oldu.");
 		}
 		doGet(request, response);
 		
