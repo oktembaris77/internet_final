@@ -93,6 +93,7 @@ height: 60px;
 text-align : center;
 line-height : 60px;
 background-color:#ccc;
+box-sizing:border-box;
 }
 
 </style>
@@ -178,6 +179,7 @@ background-color:#ccc;
 		
 		%>
 		
+		<img style="padding-left:20%; padding-top:75px;" src="ftres.jpg" >
 	</div>
 	
 	

@@ -54,7 +54,7 @@ box-shadow: 1px 2px 1px 1px gray;
 }
 
 #icerik{
-padding:10px 10px 10px 30%;
+padding:10px 10px 10px 20%;
 width:100%;
 height:100%;
 background-color:#eee;
@@ -80,7 +80,9 @@ font-size:30px;
 height:40px;
 width:100px;
 }
-
+#kform{
+margin-left:20%;
+}
 </style>
 <%
 	KayitliTakimlar takimlar = new KayitliTakimlar();
@@ -121,8 +123,8 @@ width:100px;
 			
 			else{
 	%>
-	<p class="baslik">Takım Kayıt Formu</p><br><br>
-		<form name="takimkayit" action="TakimKayitServlet" method="post">
+	<p class="baslik">Takım Kayıt</p><br><br>
+		<form id="kform" name="takimkayit" action="TakimKayitServlet" method="post">
 			<table>
 				<tr>
 					<td>Takım Adı </td>
@@ -143,6 +145,10 @@ width:100px;
 		<% 
 			}
 		%>
+		<br>
+		<br>
+		
+		<img style="border-radius:20%" src="ftres.jpg" >
 	</div>
 	
 	
