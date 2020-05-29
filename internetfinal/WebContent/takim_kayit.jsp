@@ -89,6 +89,15 @@ margin-left:20%;
 	ArrayList<TAKIM> takimlararray = new ArrayList<TAKIM>();
 	takimlararray = takimlar.Takimlar();
 %>
+
+  <script type="text/javascript">
+  	function submitform(){
+  		alert("Kayıt işlemi");
+  		
+  	}
+  
+  </script>
+
 </head>
 <body>
 	<div id="ustmenu">
@@ -128,15 +137,15 @@ margin-left:20%;
 			<table>
 				<tr>
 					<td>Takım Adı </td>
-					<td><input placeholder="Takım Adınız" id="inputtext" type="text" name="takimadi"></td>
+					<td><input required="required" placeholder="Takım Adınız" id="inputtext" type="text" name="takimadi"></td>
 				</tr>
 				<tr>
 					<td>Şehir </td>
-					<td><input placeholder="Şehir" id="inputtext" type="text" name="sehir"></td>
+					<td><input required="required" placeholder="Şehir" id="inputtext" type="text" name="sehir"></td>
 				</tr>
 				<tr>
 					<td></td>
-					<td><input value="Katıl" id="btn" type="submit"></td>
+					<td><input value="Katıl" id="btn" type="submit" onclick="submitform()"></td>
 				</tr>
 			</table>
 			
@@ -148,7 +157,7 @@ margin-left:20%;
 		<br>
 		<br>
 		
-		<img style="border-radius:20%" src="ftres.jpg" >
+		<img style="border-radius:20%" src="img/ftres.jpg" >
 	</div>
 	
 	

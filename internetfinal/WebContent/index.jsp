@@ -116,7 +116,7 @@ margin-left:200px;
 	%>
 		<br>
 		<br>
-		<img style="border-radius:20%" src="ftres.jpg" >
+		<img style="border-radius:20%" src="img/ftres.jpg" >
 		
 		<p id="yazi2">
 		
@@ -127,11 +127,11 @@ margin-left:200px;
 		projesi ile TÜGVA liseli öğrencilere sporun kardeşlik dostluk ve yardımlaşmayı gerektirdiğini hatırlatmak istiyoruz.
 		
 		</p>
-		<img id="res" style="border-radius:20%" src="bilgi1.png" >
-		<img id="res" style="border-radius:20%" src="bilgi2.png" >
-		<img id="res" style="border-radius:20%" src="bilgi3.png" >
-		<img id="res" style="border-radius:20%" src="bilgi4.png" >
-		<img id="res" style="border-radius:20%" src="bilgi5.png" >
+		<img id="res" style="border-radius:20%" src="img/bilgi1.png" >
+		<img id="res" style="border-radius:20%" src="img/bilgi2.png" >
+		<img id="res" style="border-radius:20%" src="img/bilgi3.png" >
+		<img id="res" style="border-radius:20%" src="img/bilgi4.png" >
+		<img id="res" style="border-radius:20%" src="img/bilgi5.png" >
 		
 	</div>
 	

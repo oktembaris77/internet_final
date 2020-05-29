@@ -179,7 +179,7 @@ box-sizing:border-box;
 		
 		%>
 		
-		<img style="padding-left:20%; padding-top:75px;" src="ftres.jpg" >
+		<img style="padding-left:20%; padding-top:75px;" src="img/ftres.jpg" >
 	</div>
 	
 	

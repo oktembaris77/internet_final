@@ -22,7 +22,6 @@ INDEX VERSION 1.131+C:\Users\casper\Documents\GitHub\internet_final\.metadata\.p
 1160964406.index
 3223963833.index
 2992231646.index
-520649274.index
 1021066543.index
 832819745.index
 2508946438.index
