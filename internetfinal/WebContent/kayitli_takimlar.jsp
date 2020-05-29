@@ -9,7 +9,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
 <title>Kayıtlı Takımlar</title>
 <meta charset="utf-8"/>
 <style>
@@ -114,7 +113,7 @@ background-color:#ccc;
 			<a href = "index.jsp">Anasayfa</a>
 		</div>
 		<div id="sayfabtn">
-			<a href = "takim_kayit.jsp">Takım Kayıt</a>
+			<a href = "takim_kayit.jsp?d">Takım Kayıt</a>
 		</div>
 		<div id="sayfabtn">
 			<a href = "kayitli_takimlar.jsp">Kayıtlı Takımlar</a>

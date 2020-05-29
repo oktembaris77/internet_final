@@ -1,9 +1,13 @@
+<%@page import="DAO.KayitliTakimlar" %>
+<%@page import="java.sql.Connection" %>
+<%@page import="java.util.ArrayList" %>
+<%@page import="Classes.TAKIM" %>
+<%@page import="org.apache.catalina.startup.Tomcat.ExistingStandardWrapper"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
 <title>Takım Kayıt</title>
 <meta charset="utf-8"/>
 <style>
@@ -78,6 +82,11 @@ width:100px;
 }
 
 </style>
+<%
+	KayitliTakimlar takimlar = new KayitliTakimlar();
+	ArrayList<TAKIM> takimlararray = new ArrayList<TAKIM>();
+	takimlararray = takimlar.Takimlar();
+%>
 </head>
 <body>
 	<div id="ustmenu">
@@ -85,7 +94,7 @@ width:100px;
 			<a href = "index.jsp">Anasayfa</a>
 		</div>
 		<div id="sayfabtn">
-			<a href = "takim_kayit.jsp">Takım Kayıt</a>
+			<a href = "takim_kayit.jsp?d">Takım Kayıt</a>
 		</div>
 		<div id="sayfabtn">
 			<a href = "kayitli_takimlar.jsp">Kayıtlı Takımlar</a>
@@ -105,6 +114,13 @@ width:100px;
 		
 		%>
 	</p>
+	<% 
+			if(takimlararray.size()>=16){
+				out.println("<p><font color='red'><b>Turnuva katılımları tamamlandı.</b></font></p>");
+			}
+			
+			else{
+	%>
 	<p class="baslik">Takım Kayıt Formu</p><br><br>
 		<form name="takimkayit" action="TakimKayitServlet" method="post">
 			<table>
@@ -124,6 +140,9 @@ width:100px;
 			
 		
 		</form>
+		<% 
+			}
+		%>
 	</div>
 	
 	

@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>Takım Kayıt</title>
 <meta charset="utf-8"/>
 <style>
@@ -66,7 +66,7 @@ box-sizing:border-box;
 			<a href = "index.jsp">Anasayfa</a>
 		</div>
 		<div id="sayfabtn">
-			<a href = "takim_kayit.jsp">Takım Kayıt</a>
+			<a href = "takim_kayit.jsp?d">Takım Kayıt</a>
 		</div>
 		<div id="sayfabtn">
 			<a href = "kayitli_takimlar.jsp">Kayıtlı Takımlar</a>
@@ -77,6 +77,10 @@ box-sizing:border-box;
 	</div>
 	
 	<div id="icerik">
+		<p>
+			
+		</p>
+		<img src="futbolturnuva.jpg" >
 		
 	</div>
 	
